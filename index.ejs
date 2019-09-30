@@ -1,0 +1,114 @@
+<% include ../partials/head %>
+
+<body>
+  <div class="container-scroller">
+
+    <% include ../partials/navigation %>
+
+    <% include ../partials/top_header %>
+
+    <% if(schools !=null || schools !='') { %>
+    <% if(schools.length != 0) { %>
+    <div class="row">
+      <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">schools</h4>
+            <div class="row">
+              <div class="col-12">
+                <div class="table-responsive">
+                  <table id="order-listing" class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>No of Girls</th>
+                        <th>No of Boys</th>
+                        <th>District</th>
+                        <th>Ward</th>
+                        <th>Region</th>
+                        <th>Headmaster</th>
+                        <th>Coordinator</th>
+                        <th>Street Address</th>
+                        <th>phoneNumber</th>
+                        <th>Created</th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                      <% for(var i=0; i < schools.length; i++ ) { %>
+                      <tr>
+                        <td>
+                          <%= i + 1 %>
+                        </td>
+                        <td>
+                          <%= schools[i].title %>
+                        </td>
+                        <td>
+                          <%= schools[i].no_girls %>
+                        </td>
+
+                        <td>
+                          <%= schools[i].no_boys %>
+                        </td>
+
+                        <td>
+                          <%= schools[i].district %>
+                        </td>
+
+                        <td>
+                          <%= schools[i].ward %>
+                        </td>
+
+                        <td>
+                          <%= schools[i].region %>
+                        </td>
+
+                        <td>
+                          <h5><%= schools[i].headmaster %></h5>
+                        </td>
+
+                        <td>
+                          <h5><%= schools[i].coordinator %></h5>
+                        </td>
+
+                        <td>
+                          <h5><%= schools[i].street_address %></h5>
+                        </td>
+                        <td>
+                          <h5><%= schools[i].phoneNumber %></h5>
+                        </td>
+                        
+                        <td>
+                          <%= moment(schools[i].created).format('lll') %>
+                        </td>
+
+                        <!-- <td>
+                          <a href="/schools/delete/<%= schools[i]._id %>" class="btn btn-danger">Delete</a>
+                        </td>
+                        <td>
+                          <a href="/schools/edit/<%= schools[i]._id %>" class="btn btn-success">Edit</a>
+                        </td> -->
+                      </tr>
+                      <% } %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+    <% } %>
+
+    <a href="/schools/add" class="btn btn-primary mr-2"> Add School </a>
+
+  </div>
+
+  <% include ../partials/footer %>
+
+  </html>

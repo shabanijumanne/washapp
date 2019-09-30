@@ -1,0 +1,16 @@
+<% if( success_msg != false) { %>
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong>
+    <%= success_msg %> <a href="https://play.google.com/store/apps/details?id=tz.co.mindtap.audisto" target="_blank"
+        class="alert-link"></a>
+</div>
+<% } %>
+
+<% if( error_msg != false) { %>
+<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>
+        <%= error_msg %></strong>
+</div>
+<% } %>

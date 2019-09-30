@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>SWASH</title>
+  <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css" />
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth">
+        <div class="row w-100">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left p-5">
+                    <h4>        SWASH |Registration Form</h4>
+              <div class="form-check">
+                <label class="form-check-label text-muted">
+                  <input type="checkbox" class="form-check-input" />
+                  <h6> All fields with * must be filled </h6>
+                </label>
+              </div>
+              <form action="/users/register" method="POST">
+                <label for="team_name"> User Name: </label>
+                <div class="form-group">
+                  <input type="text" name="username" class="form-control form-control-lg" id="exampleInputUsername1"
+                    placeholder="username   " />
+                </div>
+                <div class="form-group">
+                  <label for="team_name"> Email: </label>
+                  <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                    placeholder="email " />
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> First Name: * </label>
+                  <input type="text" name="first_name" class="form-control form-control-lg" id="exampleInputFirstName"
+                    placeholder="  First Name " />
+                </div>
+                <div class="form-group">
+                  <label for="team_name">Middle Name: </label>
+                  <input type="text" name="middle_name" class="form-control form-control-lg" id="exampleInputMiddleName"
+                    placeholder=" Middle Name " />
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name">Last Name: </label>
+                  <input type="text" name="last_name" class="form-control form-control-lg" id="exampleInputLastName"
+                    placeholder=" Last Name  " />
+                </div>
+
+
+
+                <div class="form-group">
+                  <label for="team_name"> Sex: *</label>
+                  <select name="gender" class="form-control form-control-lg" id="exampleFormControlSelect2">
+                    <option> Male</option>
+                    <option> Female</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> District: </label>
+                  <input type="text" name="District" class="form-control form-control-lg" id="exampleInputDistrict"
+                    placeholder="District " />
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> Ward: </label>
+                  <input type="text" name="Ward" class="form-control form-control-lg" id="exampleInputWard"
+                    placeholder="Ward" />
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> Phone Number: </label>
+                  <input type="text" name="PhoneNumber" class="form-control form-control-lg"
+                    id="exampleInputPhoneNumber" placeholder="PhoneNumber   " />
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> Country: </label>
+                  <select name="country" class="form-control form-control-lg" id="exampleFormControlSelect2">
+                    <option>Tanzania</option>
+                    <option>Kenya</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> Region: </label>
+                  <select name="region" class="form-control form-control-lg" id="exampleFormControlSelect2">
+                    <option>Dar es salaam</option>
+                    <option>Iringa</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="team_name"> Role: </label>
+                  <select name="role" class="form-control form-control-lg" id="exampleFormControlSelect2">
+                    <option>admin</option>
+                    <option>coordinator</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="team_name"> Password *: </label>
+                  <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1"
+                    placeholder="Password" />
+                </div>
+                <div class="mb-4">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input" />
+                      I agree to all Terms & Conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium"
+                    href="/users/login">REGISTER</button>
+                </div>
+
+                <div class="text-center mt-4 font-weight-light">
+                  Already have an account?
+                  <a href="/users/login" class="text-primary">Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/misc.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/todolist.js"></script> -->
+</body>
+
+</html>
