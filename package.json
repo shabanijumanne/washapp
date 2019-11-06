@@ -29,7 +29,7 @@
     "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.13",
     "moment": "^2.22.2",
-    "mongoose": "^5.3.13",
+    "mongoose": "^5.7.5",
     "mongoose-hidden": "^1.5.4",
     "mongoose-regex-search": "^0.5.2",
     "morgan": "^1.9.1",
